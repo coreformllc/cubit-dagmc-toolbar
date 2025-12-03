@@ -1,16 +1,34 @@
 ## Toolbar Installation:
-  1. Download the tarball.
+  1. From the Code button on github lone or download the zip file and unzip the file
+  2. Run the package script for your platform.
+      1. On Windows open a command window, change directories to the toolbar directory.
+          1. Run package.bat
+      2. On Linux open a terminal window, change directories to the toolbar directory.
+          1. Run ./package.sh
   2. Open Coreform Cubit. 
   3. Go to Tools/Custom Toolbar Editor.
   4. Right click in the upper left frame labeled Toolbars.
   5. Select Import.
-  6. Using the Package option, select the downloaded tarball and a destination directory.
+  6. Using the Package option, select dagmc_toolbar.tar.gz created by the 
+     package script and a destination directory.
   7. Click on the Import push button.
   8. Click on the Finish push button.
+
 *NOTE:* Requires Coreform Cubit 2025.11 or greater for PySide6 support.
 
 The gif illustrates the process. 
 ![import animation](assets/toolbar_import.gif)
+
+## Usage
+Once the toolbar is installed five new icons will be displayed in the Coreform Cubit toolbar.
+![DAGMC toolbar image](assets/dagmc_toolbar.png)
+  1. The first icon presents an about box.
+  2. The second icon renames groups to a consistent naming convention
+  3. The third icon create Cubit blocks and materials from the group names.
+  4. The fourth icon provides a deviation report of the faceted geometry vs the CAD geoemtry.
+  5. The fifth icon reads an HDF5 results file and provides a visualization of lost particles and directions.
+
+Once the model is defined you can export to DAGMC by either selecting the File/Export DAGMC option or typing at the command line "export dagmc 'filename.h5m'." Note that the quotation marks around the filename are required Cubit syntax.
 
 ## Creating an updated tarball
   1. Ensure that all changes to toolbar scripts are functioning in Cubit.
@@ -25,16 +43,6 @@ The gif illustrates the process.
   11. Right click on the files folder and select Remove selected.
   12. Click on Finish.
 
-## Usage
-Once the toolbar is installed five new icons will be displayed in the Coreform Cubit toolbar.
-![DAGMC toolbar image](assets/dagmc_toolbar.png)
-  1. The first icon presents an about box.
-  2. The second icon renames groups to a consistent naming convention
-  3. The third icon create Cubit blocks and materials from the group names.
-  4. The fourth icon provides a deviation report of the faceted geometry vs the CAD geoemtry.
-  5. The fifth icon reads an HDF5 results file and provides a visualization of lost particles and directions.
-
-Once the model is defined you can export to DAGMC by either selecting the File/Export DAGMC option or typing at the command line "export dagmc 'filename.h5m'." Note that the quotation marks around the filename are required Cubit syntax.
 
 
 
