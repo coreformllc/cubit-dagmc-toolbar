@@ -1,5 +1,6 @@
 ## Toolbar Installation:
-  1. From the Code button on github lone or download the zip file and unzip the file
+  1. From the Code button on github, either clone or download the zip 
+  file and unzip the file
   2. Run the package script for your platform.
       1. On Windows open a command window, change directories to the toolbar directory.
           1. Run package.bat
