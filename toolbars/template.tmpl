@@ -2,16 +2,15 @@
 <WorkflowToolbar version="1.0" name="DAGMC" visible="true">
   <description></description>
   <WTButton visible="true">
-    <WToolButtonAction>
-      <commands>
-
-</commands>
+    <WPythonScriptAction>
+      <filename>@TOOLBAR_INSTALL_DIR@/scripts/about_DAGMC.py</filename>
+      <UIfilename></UIfilename>
       <workingdir></workingdir>
       <WAction name="DAGMC">
         <icon>@TOOLBAR_INSTALL_DIR@/icons/svalinn.png</icon>
         <description>DAGMC Toolbar</description>
       </WAction>
-    </WToolButtonAction>
+    </WPythonScriptAction>
   </WTButton>
   <WTButton visible="true">
     <WPythonScriptAction>
